@@ -492,6 +492,10 @@ new class extends Component {
                                 <div class="flex flex-col">
                                     <span class="font-bold text-slate-800">{{ $emp->jugadorBlancas?->nombre }}</span>
                                     <span class="text-[10px] uppercase font-bold text-slate-400">Tablero {{ $emp->jugadorBlancas?->tablero }}</span>
+                                    <span class="text-[11px] text-[#c5a059] font-semibold">
+                                                {{ $emp->jugadorBlancas?->equipo?->nombre }}
+                                            </span>
+
                                 </div>
                             </div>
 
@@ -505,6 +509,9 @@ new class extends Component {
                                 <div class="flex flex-col">
                                     <span class="font-bold text-slate-800">{{ $emp->jugadorNegras?->nombre }}</span>
                                     <span class="text-[10px] uppercase font-bold text-slate-400">Tablero {{ $emp->jugadorNegras?->tablero }}</span>
+                                    <span class="text-[11px] text-[#c5a059] font-semibold">
+        {{ $emp->jugadorNegras?->equipo?->nombre }}
+    </span>
                                 </div>
                                 <div class="w-10 h-10 flex-shrink-0 bg-slate-800 border-2 border-slate-900 rounded-full flex items-center justify-center shadow-sm">
                                     <span class="text-xl text-white">♚</span>
